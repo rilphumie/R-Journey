@@ -1,0 +1,242 @@
+load("StoreLabPt1.RData")
+#1. Descriptive statistics
+# Average Sales_Tisp
+mean(Store_Copy$SALES_TISP)
+# Standard Error Sales_Tisp
+sd(Store_Copy$SALES_TISP, na.rm = TRUE) / 
+  sqrt(length(Store_Copy$SALES_TISP[!is.na(Store_Copy$SALES_TISP)]))
+
+# Median Sales_Tisp
+median(Store_Copy$SALES_TISP)
+# Standard deviation Sales_Tisp
+sd(Store_Copy$SALES_TISP)
+# Variance Sales_Tisp
+var(Store_Copy$SALES_TISP)
+# Kurtosis Sales_Tisp
+install.packages("moments")
+library(moments)
+kurtosis(Store_Copy$SALES_TISP)
+# Skewness Sales_Tisp
+skewness(Store_Copy$SALES_TISP)
+# Range Sales_Tisp
+range(Store_Copy$SALES_TISP)
+# Minimum Sales_Tisp
+min(Store_Copy$SALES_TISP)
+# Maximum Sales_Tisp
+max(Store_Copy$SALES_TISP)
+# Sum Sales_Tisp
+sum(Store_Copy$SALES_TISP)
+
+
+# Average Sales_Tesp
+mean(Store_Copy$SALES_TESP)
+# Standard Error Sales_Tesp
+sd(Store_Copy$SALES_TESP, na.rm = TRUE) /  
+  sqrt(length(Store_Copy$SALES_TESP[!is.na(Store_Copy$SALES_TESP)]))
+
+# Median Sales_Tesp
+median(Store_Copy$SALES_TESP)
+# Standard deviation Sales_Tesp
+sd(Store_Copy$SALES_TISP)
+# Variance Sales_Tesp
+var(Store_Copy$SALES_TESP)
+# Kurtosis Sales_Tesp
+library(moments)
+kurtosis(Store_Copy$SALES_TESP)
+# Skewness Sales_Tesp
+skewness(Store_Copy$SALES_TESP)
+# Range Sales_Tesp
+range(Store_Copy$SALES_TESP)
+# Minimum Sales_Tesp
+min(Store_Copy$SALES_TESP)
+# Maximum Sales_Tesp
+max(Store_Copy$SALES_TESP)
+# Sum Sales_Tesp
+sum(Store_Copy$SALES_TESP)
+# Count Sales_Tesp
+length(Store_Copy$SALES_TESP)
+
+
+# Average Log_Tisp
+mean(Store_Copy$LOG_TISP)
+# Standard Error LOG_Tisp
+sd(Store_Copy$LOG_TISP, na.rm = TRUE) / 
+  sqrt(length(Store_Copy$LOG_TISP[!is.na(Store_Copy$LOG_TISP)]))
+
+# Median Log_Tisp
+median(Store_Copy$LOG_TISP)
+# Standard deviation Log_Tisp
+sd(Store_Copy$LOG_TISP)
+# Variance Log_Tisp
+var(Store_Copy$LOG_TISP)
+# Kurtosis Log_Tisp
+library(moments)
+kurtosis(Store_Copy$LOG_TISP)
+# Skewness Log_Tisp
+skewness(Store_Copy$LOG_TISP)
+# Range Log_Tisp
+range(Store_Copy$LOG_TISP)
+# Minimum Log_Tisp
+min(Store_Copy$LOG_TISP)
+# Maximum Log_Tisp
+max(Store_Copy$LOG_TISP)
+# Sum Log_Tisp
+sum(Store_Copy$LOG_TISP)
+
+
+
+# Average Log_Tesp
+mean(Store_Copy$LOG_TESP)
+# Standard Error LOG_Tesp
+sd(Store_Copy$LOG_TESP, na.rm = TRUE) / 
+  sqrt(length(Store_Copy$LOG_TESP[!is.na(Store_Copy$LOG_TESP)]))
+
+# Median Log_Tesp
+median(Store_Copy$LOG_TESP)
+# Standard deviation Log_Tesp
+sd(Store_Copy$LOG_TESP)
+# Variance Log_Tesp
+var(Store_Copy$LOG_TESP)
+# Kurtosis Log_Tesp
+library(moments)
+kurtosis(Store_Copy$LOG_TESP)
+# Skewness Log_Tesp
+skewness(Store_Copy$LOG_TESP)
+# Range Log_Tesp
+range(Store_Copy$LOG_TESP)
+# Minimum Log_Tesp
+min(Store_Copy$LOG_TESP)
+# Maximum Log_Tesp
+max(Store_Copy$LOG_TESP)
+# Sum Log_Tesp
+sum(Store_Copy$LOG_TESP)
+
+
+# Average SPACE
+mean(Store_Copy$SPACE)
+# Standard Error SPACE
+sd(Store_Copy$SPACE, na.rm = TRUE) / 
+  sqrt(length(Store_Copy$SPACE[!is.na(Store_Copy$SPACE)]))
+
+# Median SPACE
+median(Store_Copy$SPACE)
+# Standard deviation SPACE
+sd(Store_Copy$SPACE)
+# Variance SPACE
+var(Store_Copy$SPACE)
+# Kurtosis SPACE
+library(moments)
+kurtosis(Store_Copy$SPACE)
+# Skewness SPACE
+skewness(Store_Copy$SPACE)
+# Range SPACE
+range(Store_Copy$SPACE)
+# Minimum SPACE
+min(Store_Copy$SPACE)
+# Maximum SPACE
+max(Store_Copy$SPACE)
+# Sum SPACE
+sum(Store_Copy$SPACE)
+
+
+
+# Average NDSA
+mean(Store_Copy$NDSA)
+# Standard Error NDSA
+sd(Store_Copy$NDSA, na.rm = TRUE) / 
+  sqrt(length(Store_Copy$NDSA[!is.na(Store_Copy$NDSA)]))
+
+# Median NDSA
+median(Store_Copy$NDSA)
+# Standard deviation NDSA
+sd(Store_Copy$NDSA)
+# Variance NDSA
+var(Store_Copy$NDSA)
+# Kurtosis NDSA
+library(moments)
+kurtosis(Store_Copy$NDSA)
+# Skewness NDSA
+skewness(Store_Copy$NDSA)
+# Range NDSA
+range(Store_Copy$NDSA)
+# Minimum NDSA
+min(Store_Copy$NDSA)
+# Maximum NDSA
+max(Store_Copy$NDSA)
+# Sum NDSA
+sum(Store_Copy$NDSA)
+
+
+
+# SECTION 2
+# 1. histogram for sales_tisp
+hist(Store_Copy$SALES_TISP)
+qqnorm(Store_Copy$SALES_TISP)
+qqline(Store_Copy$SALES_TISP)
+
+# 2. histogram for SPACE
+hist(Store_Copy$SPACE)
+qqnorm(Store_Copy$SPACE)
+qqline(Store_Copy$SPACE)
+
+# 3
+# a. The implication of the first histogram (sales_tisp) as shown in the visualization above is skewed to the Right i.e the tail falls to the right side and most of the data are on the left side of the histogram. 
+# We can't assume normality because there are a lot of outliers on the side.
+
+# b.
+# The implication of the first histogram (sales_tisp) as shown in the visualization above is Bi-Model distribution i.e we have 2 jumps
+# This also means we can not assume normality.
+
+
+#4
+sales_tisp <- Store_Copy$SALES_TISP
+shelf_space <- Store_Copy$SPACE
+head(cbind(shelf_space, sales_tisp))
+
+plot(shelf_space, sales_tisp, xlab = "shelf", ylab = "sales")
+
+#5
+T_space <- Store_Copy$TOTAL_SPACE
+head(cbind(T_space, sales_tisp))
+
+plot(T_space, sales_tisp, xlab = "t_space", ylab = "sales")
+
+#6 1
+Sales_tisp_19 <- store_19$SALES_TISP
+Store19_Month <- store_19$MONTH
+head(cbind(Store19_Month, Sales_tisp_19))
+
+barplot(Sales_tisp_19,  xlab = "Month", ylab = "sales")
+
+
+#6 2
+store_19$Date <- as.Date(with(store_19, paste(YEAR, MONTH, 1, sep = "-")), "%Y-%m-%d")
+store_19 = store_19[order(store_19$Date),]
+plot(store_19$Date, store_19$SALES_TISP, xlab = "Date", ylab = "sales_tisp", type = "l")
+# or
+plot(ts(store_19$SALES_TISP))
+
+
+#6 3
+Gross_19 <- store_19$GROSS_MARGIN
+head(cbind(Store19_Month, Gross_19))
+
+barplot(Gross_19, xlab = "Month", ylab = "Gross")
+
+#6 4
+store_19$Date <- as.Date(with(store_19, paste(YEAR, MONTH, 1, sep = "-")), "%Y-%m-%d")
+store_19 = store_19[order(store_19$Date),]
+plot(store_19$Date, store_19$GROSS_MARGIN, xlab = "Date", ylab = "gross_margin", type = "l")
+plot(ts(store_19$GROSS_MARGIN))
+
+
+#7
+ndsa <- Store_Copy$NDSA
+head(cbind(ndsa, sales_tisp))
+
+plot(ndsa, sales_tisp, xlab = "ndsa", ylab = "sales")
+
+
+
+
+
